@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora de imc</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/java.js"></script>
+</head>
+<body>
+    <div class="box"><!-- O quadrado inteiro-->
+
+        <div class="titulo"><!-- o titulo da calculadora-->
+            <H1>Calculadora de imc</H1>
+        </div>
+        
+        <div class="form"><!--onde fica o preenchimento de informacao-->
+            <label for="altura"> Altura </label>
+            <input type="number" step=".01" id="altura" name="altura" placeholder="Insira sua altura" required class="altura">
+
+            <label for="peso"> Peso  </label>
+            <input type="number" step=".01" id="peso" name="peso" placeholder="Insira seu peso Kg " required class="peso">
+        </div>
+
+        <div class="botao"><!--o botao-->
+            <button type="submit" class="confirmar" id="calcular" onclick="calculo_masc()">Calcular</button>
+        </div>
+
+        <div class="resultado"><!--o quadro resultado-->
+            <textarea id="texto_" rows="3"> </textarea>
+        </div>
+     </div> 
+</body>
+</html>
